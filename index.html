@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK Code Editor</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <h1>HK Code Editor</h1>
+
+        <div class="socials">
+            <a href="https://github.com/himanshuukholiya/code-editor-frontend">GitHub Repo</a>
+        </div>
+    </div>
+
+    <div class="code-editor-wrapper">
+        <div class="left-wrapper">
+            <div class="html">
+                <h2 class="code-type">HTML</h2>
+                <textarea onkeyup="updateOutput()" class="code-area" id="html-code"></textarea>
+            </div>
+    
+            <div class="css">
+                <h2 class="code-type">CSS</h2>
+                <textarea onkeyup="updateOutput()" class="code-area" id="css-code"></textarea>
+            </div>
+    
+            <div class="js">
+                <h2 class="code-type">JS</h2>
+                <textarea onkeyup="updateOutput()" class="code-area" id="js-code"></textarea>
+            </div>
+        </div>
+
+        <div class="right-wrapper">
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <div class="footer-bar">
+        <p>Made with ❤️ by <span>Himanshu Kholiya</span></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
