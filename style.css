@@ -29,6 +29,10 @@ a {
     align-items: center;
 }
 
+.nav-bar h1 {
+    cursor: pointer;
+}
+
 .code-editor-wrapper {
     display: flex;
     height: 90vh;
@@ -52,7 +56,7 @@ a {
 }
 
 .code-area {
-    background-color: #1D1E22;
+    /* background-color: #1D1E22;
     color: #fff;
     font-size: 16px;
     height: 80%;
@@ -60,7 +64,8 @@ a {
     padding: 8px;
     border: none;
     resize: none;
-    outline: none;
+    outline: none; */
+    display: none;
 }
 
 .right-wrapper {
@@ -79,6 +84,7 @@ a {
     display: flex;
     justify-content: center;
     padding: 2px 0;
+    cursor: default;
 }
 
 .footer-bar span {
@@ -101,4 +107,11 @@ a {
 
 .p5js-editor-button:hover {
     background-color: #ebebeb;
+}
+
+.CodeMirror {
+    height: calc(100% - 40px) !important; /* Leave space for heading */
+    font-size: 16px;
+    cursor: text;
+    scrollbar-color: #545974 #383b4b;
 }
